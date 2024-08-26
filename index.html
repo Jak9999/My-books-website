@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1></h1>
+    <div class="row">
+        {% for book in books %}
+        <div class="col-md-4 mb-4"> <!-- 3 books per row -->
+            <div class="card h-100">
+                <img src="{{ book.image_url }}" class="card-img-top" alt="{{ book.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.name }}</h5>
+                    <!-- Read button -->
+                    <a href="{{ book.pdf_url }}" class="btn btn-primary btn-block mt-3" target="_blank">Read</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

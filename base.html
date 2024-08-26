@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+          .navbar-wrapper {
+            max-width: 90%; /* Adjust to control overall navbar width */
+            margin: 0 auto; /* Center the navbar wrapper horizontally */
+        }
+        .bg-gradient-blue {
+            background: linear-gradient(to right, #003366, #0099ff); /* Gradient from dark blue to light blue */
+            border-radius: 0.5rem; /* Rounded corners */
+            padding: 0.5rem 1rem; /* Padding inside the navbar */
+        }
+
+        .navbar {
+            justify-content: center; /* Center the content horizontally */
+        }
+
+        .navbar-brand {
+            color: #fff; /* White text color */
+            font-family: 'Arial', sans-serif; /* Simple, clean font */
+            font-weight: bold; /* Make text bold */
+            font-size: 1.75rem; /* Increase font size */
+        }
+
+        .container-fluid {
+            max-width: 30%; /* Adjust the max-width to make the navbar smaller horizontally */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <nav class="navbar bg-gradient-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TOP 6 BOOKS TO INSPIRE YOU!</a>
+            </div>
+    </nav>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+    <!-- Custom CSS -->
+    <style>
+        .navbar-brand:hover {
+
+    color: #ffdd57; /* Change the text color on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+        /* Apply a gradient background to the whole page */
+        body {
+
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            min-height: 100vh; /* Ensure the background covers the entire page */
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /* Container to center content and add some padding */
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .card {
+        border-radius: 0.75rem; /* Round the card corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        overflow: hidden; /* Ensure content fits within rounded corners */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+         transform: translateY(-5px); /* Lift the card slightly on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
+
+        /* Card styles to give them a clean, consistent appearance */
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure images don't overflow the card */
+        }
+
+        .card-img-top {
+            height: 200px; /* Set image height */
+            object-fit: cover; /* Make sure images cover the area */
+        }
+
+        .card-body {
+            background-color: white; /* White background for text clarity */
+            text-align: center;
+        }
+
+        /* Heading style */
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 40px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+<body>
+<nav class="navbar bg-blue">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+    </div>
+</nav>
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<!-- Optional JavaScript for Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
